@@ -1,16 +1,19 @@
-//
-// Created by Пысь on 19.02.2022.
-//
+#include "bits/stdc++.h"
 
 #include "cylinder.h"
-void cylinder::setName(char *n) {
+
+using namespace std;
+
+void cylinder::setName(char * n) {
+    cout << "enter the name of the cylinder: ";
+    cin >> n;
     strcpy(name, n);
 }
-void cylinder::getName(char *n) {
-   strcpy(n, name);
+void cylinder::getName(char * n) {
+    strcpy(n, name);
 }
 void cylinder::setRadius(float r) {
-    cout << "znachenie radiusa: ";
+    cout << "enter a radius value: ";
     cin >> r;
     radius = r;
 }
@@ -18,11 +21,10 @@ float cylinder::getRadius() {
     return radius;
 }
 void cylinder::setHeight(float h) {
-    cout << "znachenie visoti : ";
+    cout << "enter the height of the cylinder: ";
     cin >> h;
     height = h;
 }
 float cylinder::getHeight() {
     return height;
 }
-
